@@ -1,0 +1,19 @@
+.footer {
+  background-color: $background-hero-color;
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+}
+.contacts-box {
+  justify-content: left;
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  padding: 12px 0 20px 0;
+}

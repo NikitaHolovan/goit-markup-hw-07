@@ -1,0 +1,33 @@
+.section-clients {
+  padding: 94px 0;
+}
+
+.section-clients__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-clients__link {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid $social-icons-primary;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  & svg {
+    fill: $social-icons-primary;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}
