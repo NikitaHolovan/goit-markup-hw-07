@@ -1,8 +1,9 @@
 @import "./utils/vars";
+@import "./base/normalise";
 @import "./components/common-styles";
 @import "./components/header";
 @import "./components/logo";
-@import "./components/site-nav";
+@import "./components/main-nav";
 @import "./components/header-contacts";
 @import "./components/hero";
 @import "./components/primary-button";
