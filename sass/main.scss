@@ -1,12 +1,15 @@
 @import "./utils/vars";
 @import "./base/normalise";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./components/common-styles";
+@import "./components/primary-button";
+@import "./components/secondary-button";
 @import "./components/header";
 @import "./components/logo";
 @import "./components/main-nav";
 @import "./components/header-contacts";
 @import "./components/hero";
-@import "./components/primary-button";
 @import "./components/backdrop";
 @import "./components/backdrop-modal";
 @import "./components/benefits";
@@ -19,6 +22,5 @@
 @import "./components/footer-modal";
 @import "./components/portfolio";
 @import "./components/portfolio-button-list";
-@import "./components/secondary-button";
 @import "./components/portfolio-list";
 @import "./components/portfolio-list-overlay";

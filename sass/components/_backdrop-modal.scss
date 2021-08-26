@@ -1,6 +1,5 @@
 .modal-form {
-  display: flex;
-  flex-direction: column;
+  @include flex($display: flex, $direction: column);
 }
 .modal-form__group {
   position: relative;
@@ -17,14 +16,20 @@
 }
 .modal-form__input,
 .modal-form__textarea {
-  /* margin: 4px 0 10px 0; */
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 40px;
-  width: 100%;
-  padding: 0 20px 0 42px;
-  outline: none;
+  @extend %inputTextarea;
+
+  & + svg {
+    @include transit;
+  }
+  &:hover,
+  &:focus {
+    @include bordered($color: $accent-color) // border: 1px solid $accent-color;
+;
+  }
+  &:hover + svg,
+  &:focus + svg {
+    fill: $accent-color;
+  }
 }
 .modal-form__textarea {
   height: 120px;
@@ -39,28 +44,16 @@
   left: 12px;
   top: 33px;
 }
-input:focus,
-input:hover,
-textarea:hover,
-textarea:focus {
-  border: 1px solid $accent-color;
-}
-input:focus + svg,
-input:hover + svg {
-  fill: $accent-color;
-}
+
 .modal-form__group-comment {
   margin-bottom: 20px;
 }
 .modal-form__group-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centeredFlex;
   margin-bottom: 30px;
 }
 .modal-form__agreement {
-  display: flex;
-  align-items: center;
+  @include flex($display: flex, $align: center);
 }
 
 .modal-form__checkbox {

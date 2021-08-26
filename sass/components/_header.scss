@@ -1,9 +1,6 @@
 .header {
-  border-bottom: 1px solid var(--border-secondary);
+  @include bordered($color: $border-secondary);
 }
-
 .head-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex($display: flex, $justify: space-between, $align: center);
 }

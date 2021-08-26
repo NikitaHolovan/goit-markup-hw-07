@@ -3,13 +3,11 @@
   padding: 94px 0;
 }
 .section-team__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex($justify: space-between);
 }
 .section-team__box {
+  @include flex($direction: column);
   background-color: $primary-white-color;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -37,27 +35,24 @@
   letter-spacing: 0.03em;
 }
 .section-team__social-box {
-  display: flex;
+  @include flex($justify: space-between);
   width: 100%;
-  justify-content: space-between;
   padding: 0 32px 30px 32px;
 }
 .section-team__social {
+  @extend %centeredFlex;
   width: 44px;
   height: 44px;
   border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $primary-white-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;
   }
   & svg {
     fill: $social-icons-primary;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transit(fill);
   }
   &:hover svg,
   &:focus svg {

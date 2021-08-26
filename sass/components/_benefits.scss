@@ -6,8 +6,7 @@
   font-size: 0;
 }
 .section-benefits__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex($display: flex, $justify: space-between);
 }
 .section-benefits__box {
   width: 270px;
@@ -22,11 +21,11 @@
 }
 
 .section-benefits__icon {
+  @extend %centeredFlex;
+
   height: 120px;
   background-color: $background-secondary-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   margin-bottom: 30px;
   border-radius: 4px;
 }

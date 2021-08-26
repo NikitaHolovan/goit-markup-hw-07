@@ -1,13 +1,11 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex($display: flex, $wrap: wrap);
 }
 .portfolio-list__item {
+  @include flex($display: flex, $direction: column);
   background: $primary-white-color;
   width: 370px;
   height: 404px;
-  display: flex;
-  flex-direction: column;
   &:not(:nth-child(-n + 3)) {
     margin-top: 30px;
   }
@@ -17,7 +15,8 @@
 }
 
 .portfolio-list__link {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(box-shadow);
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -30,7 +29,7 @@
 }
 
 .portfolio-list__text {
-  border: 1px solid $border-primary;
+  @include bordered($color: $border-primary);
   border-top: none;
   padding: 20px 0;
 }
