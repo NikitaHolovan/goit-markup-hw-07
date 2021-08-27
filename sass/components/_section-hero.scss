@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: $background-hero-color;
-  padding: 200px 0;
+  @include padding($t: 200px, $b: 200px);
 }
 .section-hero__title {
   color: $primary-white-color;

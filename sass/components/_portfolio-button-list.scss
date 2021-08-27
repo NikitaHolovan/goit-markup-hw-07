@@ -1,5 +1,5 @@
 .button-list {
-  @include flex($display: flex, $justify: center);
+  @include flex($justify: center);
   margin-bottom: 50px;
 }
 

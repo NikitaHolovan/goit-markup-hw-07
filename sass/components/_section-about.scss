@@ -1,10 +1,10 @@
 .section-about {
   background-color: $primary-white-color;
-  padding: 47px 0 94px 0;
+  @include padding(47px);
 }
 
 .section-about__list {
-  @include flex($display: flex, $justify: space-between);
+  @include flex($justify: space-between);
 }
 
 .section-about__item {
@@ -20,7 +20,7 @@
   bottom: 4px;
   width: 100%;
   background-color: $about-bgc;
-  padding: 27px 0;
+  @include padding($t: 27px, $b: 27px);
 }
 
 .section-about__description {

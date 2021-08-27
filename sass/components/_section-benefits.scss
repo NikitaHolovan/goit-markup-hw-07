@@ -1,12 +1,12 @@
 .section-benefits {
-  padding: 94px 0 47px 0;
+  @include padding($b: 47px);
 }
 .section-benefits__title--hidden {
   visibility: hidden;
   font-size: 0;
 }
 .section-benefits__list {
-  @include flex($display: flex, $justify: space-between);
+  @include flex($justify: space-between);
 }
 .section-benefits__box {
   width: 270px;

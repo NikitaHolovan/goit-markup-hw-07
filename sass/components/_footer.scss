@@ -1,14 +1,12 @@
 .footer {
   background-color: $background-hero-color;
-  padding: 60px 0;
+  @include padding($t: 60px, $b: 60px);
 }
 .footer__container {
   display: flex;
 }
-.contacts-box {
-  justify-content: left;
-}
-.footer-title {
+
+.footer__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;

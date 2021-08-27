@@ -1,5 +1,5 @@
 .section-clients {
-  padding: 94px 0;
+  @include padding;
 }
 
 .section-clients__box {

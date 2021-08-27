@@ -1,8 +1,8 @@
 .portfolio-list {
-  @include flex($display: flex, $wrap: wrap);
+  @include flex($wrap: wrap);
 }
 .portfolio-list__item {
-  @include flex($display: flex, $direction: column);
+  @include flex($direction: column);
   background: $primary-white-color;
   width: 370px;
   height: 404px;
@@ -30,8 +30,8 @@
 
 .portfolio-list__text {
   @include bordered($color: $border-primary);
+  @include padding($t: 20px, $b: 20px);
   border-top: none;
-  padding: 20px 0;
 }
 .portfolio-list__example {
   color: $primary-text-color;

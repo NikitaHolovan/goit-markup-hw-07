@@ -1,11 +1,11 @@
-.modal-form {
-  @include flex($display: flex, $direction: column);
+.form {
+  @include flex($direction: column);
 }
-.modal-form__group {
+.form__group {
   position: relative;
   margin-bottom: 10px;
 }
-.modal-form__label {
+.form__label {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -14,8 +14,8 @@
   margin-bottom: 4px;
   display: inline-block;
 }
-.modal-form__input,
-.modal-form__textarea {
+.form__input,
+.form__textarea {
   @extend %inputTextarea;
 
   & + svg {
@@ -31,60 +31,65 @@
     fill: $accent-color;
   }
 }
-.modal-form__textarea {
+.form__textarea {
   height: 120px;
   padding: 12px 16px;
   resize: none;
 }
-.modal-form__textarea::placeholder {
+.form__textarea::placeholder {
   color: $placeholder-modal;
 }
-.modal-form__svg {
+.form__svg {
   position: absolute;
   left: 12px;
   top: 33px;
 }
 
-.modal-form__group-comment {
+.form__group-comment {
   margin-bottom: 20px;
 }
-.modal-form__group-checkbox {
+.form__group-checkbox {
   @extend %centeredFlex;
   margin-bottom: 30px;
 }
-.modal-form__agreement {
-  @include flex($display: flex, $align: center);
+.form__agreement {
+  @include flex($align: center);
 }
-
-.modal-form__checkbox {
-  position: absolute;
-  appearance: none;
-  opacity: 0;
-  &:checked + .modal-form__icon {
-    background-image: url(../images/icons/icon_check.svg);
-  }
-}
-.modal-form__icon {
+.form__icon {
   margin-right: 7px;
   width: 16px;
   height: 15px;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../images/icons/icon_checkbox.svg);
+  @include transit;
   &:hover svg {
     fill: $accent-color;
   }
 }
 
-.modal-form__text {
+.form__checkbox {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+  &:checked + .form__icon {
+    background-image: url(../images/icons/icon_check.svg);
+  }
+}
+
+.form__text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
 }
 
-.modal-form__link {
+.form__link {
   text-decoration: underline;
   color: $accent-color;
   margin-left: 4px;
+}
+
+.form__button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
