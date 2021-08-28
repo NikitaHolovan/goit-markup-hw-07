@@ -2,5 +2,5 @@
   @include bordered($color: $border-secondary);
 }
 .header__container {
-  @include flex($justify: space-between, $align: center);
+  @include flex($jc: space-between, $ai: center);
 }

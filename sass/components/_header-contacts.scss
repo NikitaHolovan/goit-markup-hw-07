@@ -13,7 +13,7 @@
   font-size: 14px;
   line-height: 1.1;
   @include transit(color);
-  @include flex($align: center);
+  @include flex($ai: center);
   &:hover,
   &:focus {
     color: $accent-color;

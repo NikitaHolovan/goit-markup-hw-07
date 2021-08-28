@@ -4,7 +4,7 @@
 }
 
 .section-about__list {
-  @include flex($justify: space-between);
+  @include flex($jc: space-between);
 }
 
 .section-about__item {

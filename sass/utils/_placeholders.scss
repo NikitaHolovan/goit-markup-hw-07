@@ -1,21 +1,8 @@
-%inputTextarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 40px;
-  width: 100%;
-  padding: 0 20px 0 42px;
-  outline: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 %centeredFlex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-%resetMgPd {
-  margin: 0;
-  padding: 0;
+%d-flex {
+  display: flex;
 }

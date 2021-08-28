@@ -1,8 +1,8 @@
 .portfolio-list {
-  @include flex($wrap: wrap);
+  @include flex($w: wrap);
 }
 .portfolio-list__item {
-  @include flex($direction: column);
+  @include flex($d: column);
   background: $primary-white-color;
   width: 370px;
   height: 404px;

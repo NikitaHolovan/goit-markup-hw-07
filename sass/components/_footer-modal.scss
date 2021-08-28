@@ -1,14 +1,14 @@
-.modal-footer {
+.footer-mail {
   margin-left: auto;
 }
-.modal-footer__box {
-  @include flex($justify: right);
+.footer-mail__box {
+  @include flex($jc: right);
 }
-.modal-footer__button {
-  @include flex($align: center);
+.footer-mail__button {
+  @include flex($ai: center);
 }
 
-.modal-footer__email {
+.footer-mail__email {
   @include bordered($color: $footer-modal-border);
   width: 358px;
   height: 50px;
@@ -26,9 +26,9 @@
   }
 }
 
-.modal-footer__svg {
+.footer-mail__svg {
   margin-left: 10px;
 }
-.modal-footer__button {
+.footer-mail__button {
   margin-left: 12px;
 }

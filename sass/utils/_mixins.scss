@@ -12,18 +12,20 @@
   transition: $transitionType $transitionTime cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin flex(
-  $display: flex,
-  $align: stretch,
-  $justify: flex-start,
-  $direction: row,
-  $wrap: nowrap
-) {
-  display: $display;
-  align-items: $align;
-  justify-content: $justify;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
+@mixin flex($jc: falce, $ai: falce, $d: falce, $w: falce) {
+  @extend %d-flex;
+  @if ($jc) {
+    justify-content: $jc;
+  }
+  @if ($ai) {
+    align-items: $ai;
+  }
+  @if ($d) {
+    flex-direction: $d;
+  }
+  @if ($w) {
+    flex-wrap: $w;
+  }
 }
 @mixin padding($t: 94px, $r: 0, $b: 94px, $l: 0) {
   padding: $t $r $b $l;

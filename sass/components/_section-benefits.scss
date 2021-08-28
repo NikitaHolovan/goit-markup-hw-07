@@ -6,7 +6,7 @@
   font-size: 0;
 }
 .section-benefits__list {
-  @include flex($justify: space-between);
+  @include flex($jc: space-between);
 }
 .section-benefits__box {
   width: 270px;
